@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.3"
+        android:orientation="vertical"
+        android:background="#FF5722">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <TextView
+                android:text="Hola"
+                android:textSize="25sp"
+                android:layout_width="0dp"
+                android:gravity="center"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+            <Button
+                android:text="Guardar"
+                android:layout_width="0dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:background="#25456222"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <TextView
+                android:text="Playlist"
+                android:textSize="20dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="#FFFFFF"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:text="Stations"
+                android:textSize="20dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="#FFFFFF"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:text="Artists"
+                android:textSize="20dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="#FFFFFF"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:text="Albums"
+                android:textSize="20dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="#FFFFFF"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#eeeeee">
+
+
+        <TextView
+            android:id="@+id/mainTxtTitulo"
+            android:text="Estaciones Recientes"
+            android:textSize="30sp"
+            android:textColor="#000"
+            android:layout_margin="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
+        <LinearLayout
+            android:id="@+id/RelativeLista1"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:orientation="horizontal"
+            android:layout_below="@id/mainTxtTitulo"
+            android:gravity="center">
+
+        <ImageView
+            android:id="@+id/mainImgImg1"
+            android:src="@drawable/accion"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:scaleType="centerCrop"
+            android:layout_margin="15dp"
+            android:layout_marginBottom="5dp" />
+
+
+        <ImageView
+            android:id="@+id/mainImgImg2"
+            android:src="@drawable/meninblack"
+            android:scaleType="centerCrop"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_margin="15dp"
+            />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/RelativeListaTxt1"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_below="@id/RelativeLista1"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/mainTxtPeli1"
+                android:text="Pelicula No 1"
+                android:textSize="25sp"
+                android:textColor="#000"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp" />
+            <TextView
+                android:id="@+id/mainTxtPeli2"
+                android:text="Pelicula No 2"
+                android:textSize="25sp"
+                android:textColor="#000"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/RelativeLista2"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:orientation="horizontal"
+            android:layout_below="@id/RelativeListaTxt1"
+            android:layout_marginRight="5dp"
+            android:gravity="center">
+
+        <ImageView
+            android:id="@+id/mainImgImg3"
+            android:src="@drawable/wolverine"
+            android:scaleType="centerCrop"
+            android:layout_margin="15dp"
+            android:layout_width="150dp"
+            android:layout_height="150dp"/>
+        <ImageView
+            android:id="@+id/mainImgImg4"
+            android:src="@drawable/women"
+            android:scaleType="centerCrop"
+            android:layout_margin="15dp"
+            android:layout_width="150dp"
+            android:layout_height="150dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/RelativeListaTxt2"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_below="@id/RelativeLista2"
+            android:layout_marginRight="5dp"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/mainTxtPeli3"
+                android:text="Pelicula No 3"
+                android:textSize="25sp"
+                android:textColor="#640a0c"
+                android:layout_marginLeft="5dp"
+
+                android:layout_width="wrap_content"
+                android:layout_height="30dp" />
+            <TextView
+                android:id="@+id/mainTxtPeli4"
+                android:text="Pelicula No 4"
+                android:textSize="25sp"
+                android:textColor="#640a0c"
+                android:layout_marginLeft="5dp"
+
+                android:layout_width="wrap_content"
+                android:layout_height="30dp" />
+        </LinearLayout>
+
+    </RelativeLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.2">
+
+        <ImageView
+            android:id="@+id/mainImgImg5"
+            android:src="@mipmap/ic_launcher"
+            android:scaleType="centerCrop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/mainTxtCancion"
+            android:text="Music"
+            android:textSize="30sp"
+            android:textColor="#000"
+            android:layout_margin="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </FrameLayout>
+
+</LinearLayout>
